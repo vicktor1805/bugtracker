@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical">
+  <Class Name="VMC.BugTracker.Domain.Data.ContextDb.Usuario">
+    <Position X="6.75" Y="7.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAEAAAAAAAAAABAAABAQIAAAgAAAAAAAgAAABg=</HashCode>
+      <FileName>Data\ContextDb\Usuario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Estado" />
+      <Property Name="Rol" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="VMC.BugTracker.Domain.Rol">
+    <Position X="4" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAgAAAgAAAAAAAIAAAAAAAABA=</HashCode>
+      <FileName>Rol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VMC.BugTracker.Domain.EstadoGenerico">
+    <Position X="4" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>EstadoGenerico.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VMC.BugTracker.Domain.TipoGenerico">
+    <Position X="4.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>TipoGenerico.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VMC.BugTracker.Domain.Data.ContextDb.Proyecto">
+    <Position X="7" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAQIAECAAAAAAAgIAAgABBAgAgAAAQAAAQAAAAAAg=</HashCode>
+      <FileName>Data\ContextDb\Proyecto.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Estado" />
+      <Property Name="TipoProyecto" />
+      <Property Name="UsuarioRegistro" />
+      <Property Name="UsuarioResponsable" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Roles" />
+      <Property Name="Incidencias" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="VMC.BugTracker.Domain.Data.ContextDb.Incidencia">
+    <Position X="10.25" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAECCCAAAAAAJAAgABBhAAAAgAABAAQAAAAIAg=</HashCode>
+      <FileName>Data\ContextDb\Incidencia.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="UsuarioAsignado" />
+      <Property Name="UsuarioRegistro" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="IncidenciaAdjuntos" />
+      <Property Name="IncidenciaComentarios" />
+      <Property Name="IncidenciaCambios" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="VMC.BugTracker.Domain.Data.ContextDb.IncidenciaCambio">
+    <Position X="13.25" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEACAAAAAAAAAAAAAAAJAAAAAEAAAUAAAAAAA=</HashCode>
+      <FileName>Data\ContextDb\IncidenciaCambio.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Incidencia" />
+      <Property Name="Usuario" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="VMC.BugTracker.Domain.Data.ContextDb.IncidenciaAdjunto">
+    <Position X="10.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAACAAAAAAAAAAAAAAAIAAAAAMAAAUAAAACAA=</HashCode>
+      <FileName>Data\ContextDb\IncidenciaAdjunto.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Incidencia" />
+      <Property Name="Usuario" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="VMC.BugTracker.Domain.Data.ContextDb.IncidenciaComentario">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAIAAAAAEAAAUACAAAAA=</HashCode>
+      <FileName>Data\ContextDb\IncidenciaComentario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Incidencia" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
