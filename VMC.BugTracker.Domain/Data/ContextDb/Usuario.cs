@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace VMC.BugTracker.Domain.Data.ContextDb
@@ -12,7 +13,7 @@ namespace VMC.BugTracker.Domain.Data.ContextDb
         public string NombreCompleto { get; set; }
         public string Telefono { get; set; }
         public bool CorreoVerificado { get; set; }
-
+        public DateTime FechaRegistro { get; set; }
         public EstadoGenerico Estado { get; set; }
         public Rol Rol { get; set; }
 

@@ -13,6 +13,7 @@ namespace VMC.BugTracker.Domain.Data.ContextDb
         public int UsuarioId { get; set; }
         public Incidencia Incidencia { get; set; }
         public Usuario Usuario { get; set; }
+        public EstadoGenerico Estado { get; set; }
 
     }
 }

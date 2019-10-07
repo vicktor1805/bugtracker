@@ -8,7 +8,7 @@ namespace VMC.BugTracker.Domain.Data.ContextDb
         public int ProyectoId { get; set; }
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
-        public string EstadoId { get; set; }
+        public int EstadoId { get; set; }
         public int UsuarioResponsableId { get; set; }
         public int UsuarioRegistroId { get; set; }
         public int TipoProyectoId { get; set; }
