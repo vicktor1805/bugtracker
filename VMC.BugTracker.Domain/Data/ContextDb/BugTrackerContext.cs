@@ -16,6 +16,7 @@ namespace VMC.BugTracker.Domain.Data.ContextDb
         public DbSet<IncidenciaAdjunto> IncidenciaAdjunto { get; set; }
         public DbSet<IncidenciaCambio> IncidenciaCambio { get; set; }
         public DbSet<IncidenciaComentario> IncidenciaComentario { get; set; }
+        public DbSet<RolProyecto> RolProyecto { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -42,7 +43,7 @@ namespace VMC.BugTracker.Domain.Data.ContextDb
             modelBuilder.Entity<Rol>(entity =>
             {
                 entity.HasKey(p => p.RolId);
-                entity.HasOne(p => p.Proyecto);
+                //entity.HasOne(p => p.Proyecto);
                 entity.HasMany(p => p.Usuarios);
                 entity.Property(p => p.Nombre).IsRequired();
                 entity.Property(p => p.EsAdministrador).IsRequired();

@@ -19,7 +19,7 @@ namespace VMC.BugTracker.Domain.Data.ContextDb
         public Usuario UsuarioRegistro { get; set; }
         public TipoGenerico TipoProyecto { get; set; }
 
-        public ICollection<Rol> Roles { get; set; }
+        public ICollection<RolProyecto> RolProyectos { get; set; }
         public ICollection<Incidencia> Incidencias { get; set; }
     }
 }
